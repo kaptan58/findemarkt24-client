@@ -1,0 +1,1 @@
+console.log('Findemarkt24 Client Uygulaması');
