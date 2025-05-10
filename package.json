@@ -1,9 +1,1 @@
-
-{
-  "name": "findemarkt24-client",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "start": "echo 'Static project, open index.html'"
-  }
-}
+{ "name": "findemarkt24-client", "version": "1.0.0", "main": "app.js" }
