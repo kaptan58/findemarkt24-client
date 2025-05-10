@@ -1,1 +1,1 @@
-console.log('Findemarkt24 Client Uygulaması');
+console.log('Findemarkt24 client loaded');
