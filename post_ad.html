@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Anzeige aufgeben - Findemarkt24</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+    }
+    h1 {
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anzeige aufgeben</h1>
+  <div class="form-container">
+    <form>
+      <label for="title">Titel</label>
+      <input type="text" id="title" placeholder="z. B. iPhone 12 zu verkaufen" required />
+
+      <label for="price">Preis (€)</label>
+      <input type="number" id="price" placeholder="z. B. 450" required />
+
+      <label for="category">Kategorie</label>
+      <select id="category" required>
+        <option>Fahrzeuge</option>
+        <option>Immobilien</option>
+        <option>Elektronik</option>
+        <option>Jobs</option>
+        <option>Haushalt & Garten</option>
+      </select>
+
+      <label for="location">Ort / PLZ</label>
+      <input type="text" id="location" placeholder="z. B. Berlin oder 10115" required />
+
+      <label for="description">Beschreibung</label>
+      <textarea id="description" rows="5" placeholder="Geben Sie eine detaillierte Beschreibung ein..." required></textarea>
+
+      <label for="images">Fotos hochladen</label>
+      <input type="file" id="images" multiple accept="image/*" />
+
+      <button type="submit">Anzeige erstellen</button>
+    </form>
+  </div>
+</body>
+</html>

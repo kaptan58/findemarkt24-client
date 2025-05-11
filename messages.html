@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Nachrichten - Findemarkt24</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      padding: 40px;
+    }
+    .messages {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .message {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .message:last-child {
+      border-bottom: none;
+    }
+    .sender {
+      font-weight: bold;
+    }
+    .preview {
+      color: #555;
+    }
+    .time {
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="messages">
+    <h2>Nachrichten</h2>
+    <div class="message">
+      <div>
+        <div class="sender">Anna Meyer</div>
+        <div class="preview">Ist das Sofa noch verfügbar?</div>
+      </div>
+      <div class="time">Vor 2 Stunden</div>
+    </div>
+    <div class="message">
+      <div>
+        <div class="sender">Tom Berger</div>
+        <div class="preview">Kann ich es morgen abholen?</div>
+      </div>
+      <div class="time">Gestern</div>
+    </div>
+    <div class="message">
+      <div>
+        <div class="sender">Lisa König</div>
+        <div class="preview">Interessiert an der Wohnung</div>
+      </div>
+      <div class="time">Vor 3 Tagen</div>
+    </div>
+  </div>
+</body>
+</html>

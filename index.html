@@ -1,30 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Findemarkt24 - Kategorien</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; margin: 0; background: #f2f2f2; }
-    h1 { text-align: center; }
-    .kategorien { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
-    .karte { background: white; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); cursor: pointer; transition: 0.2s; }
-    .karte:hover { background: #e6e6e6; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Findemarkt24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0044cc;
+        }
+        header nav a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #0044cc;
+            font-weight: bold;
+        }
+        .search-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .search-section h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .search-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .search-bar input, .search-bar button {
+            padding: 0.8rem;
+            font-size: 1rem;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .category {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            width: 140px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .latest-ads {
+            padding: 2rem;
+            background: #fff;
+        }
+        .ads-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .ad-card {
+            background: #f1f1f1;
+            border-radius: 6px;
+            padding: 1rem;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Kategorien</h1>
-  <div class="kategorien">
-    <div class="karte">Fahrzeuge</div>
-    <div class="karte">Immobilien</div>
-    <div class="karte">Elektronik</div>
-    <div class="karte">Haushalt & Möbel</div>
-    <div class="karte">Mode & Accessoires</div>
-    <div class="karte">Familie, Kind & Baby</div>
-    <div class="karte">Freizeit, Hobby & Nachbarschaft</div>
-    <div class="karte">Dienstleistungen</div>
-    <div class="karte">Stellenangebote</div>
-    <div class="karte">Zu Verschenken & Tauschen</div>
-  </div>
+<header>
+    <div class="logo">Findemarkt24</div>
+    <nav>
+        <a href="#">Anmelden</a>
+        <a href="#">Anzeige aufgeben</a>
+    </nav>
+</header>
+
+<section class="search-section">
+    <h1>Finde, was du suchst</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="z.B. Auto, Wohnung...">
+        <input type="text" placeholder="PLZ oder Ort">
+        <button>Suchen</button>
+    </div>
+</section>
+
+<section class="categories">
+    <div class="category">Fahrzeuge</div>
+    <div class="category">Immobilien</div>
+    <div class="category">Jobs</div>
+    <div class="category">Haus & Garten</div>
+    <div class="category">Elektronik</div>
+    <div class="category">Freizeit</div>
+    <div class="category">Haustiere</div>
+    <div class="category">Alle Kategorien</div>
+</section>
+
+<section class="latest-ads">
+    <h2>Neueste Anzeigen</h2>
+    <div class="ads-container">
+        <div class="ad-card">
+            <strong>14.500 €</strong><br>
+            Gebrauchwagen, guter Zustand<br>
+            München – Vor 2 Stunden
+        </div>
+        <div class="ad-card">
+            <strong>1.200 €</strong><br>
+            3-Zimmer-Wohnung<br>
+            Berlin – Gestern
+        </div>
+        <div class="ad-card">
+            <strong>450 €</strong><br>
+            Dell Laptop 15 Zoll, 16GB RAM<br>
+            Köln – Vor 4 Tagen
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
