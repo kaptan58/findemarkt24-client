@@ -1,1 +1,4 @@
-console.log("Findemarkt24 app loaded.");
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Findemarkt24 client loaded.");
+});
