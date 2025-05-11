@@ -2,136 +2,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Findemarkt24</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        header .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #0044cc;
-        }
-        header nav a {
-            margin-left: 1rem;
-            text-decoration: none;
-            color: #0044cc;
-            font-weight: bold;
-        }
-        .search-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem;
-        }
-        .search-section h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .search-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .search-bar input, .search-bar button {
-            padding: 0.8rem;
-            font-size: 1rem;
-        }
-        .categories {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            padding: 2rem;
-        }
-        .category {
-            background: #fff;
-            border-radius: 8px;
-            padding: 1rem;
-            text-align: center;
-            width: 140px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .latest-ads {
-            padding: 2rem;
-            background: #fff;
-        }
-        .ads-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        .ad-card {
-            background: #f1f1f1;
-            border-radius: 6px;
-            padding: 1rem;
-            width: 200px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Findemarkt24 – Startseite</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="logo">Findemarkt24</div>
-    <nav>
-        <a href="#">Anmelden</a>
-        <a href="#">Anzeige aufgeben</a>
-    </nav>
-</header>
-
-<section class="search-section">
-    <h1>Finde, was du suchst</h1>
+  <header>
+    <h1>Findemarkt24</h1>
+    <div class="actions">
+      <a href="#">Anmelden</a>
+      <button>Anzeige aufgeben</button>
+    </div>
+  </header>
+  <main>
+    <h2>Finde, was du suchst</h2>
     <div class="search-bar">
-        <input type="text" placeholder="z.B. Auto, Wohnung...">
-        <input type="text" placeholder="PLZ oder Ort">
-        <button>Suchen</button>
+      <input type="text" placeholder="z.B. Auto, Wohnung…" />
+      <input type="text" placeholder="PLZ oder Ort" />
+      <button>Suchen</button>
     </div>
-</section>
-
-<section class="categories">
-    <div class="category">Fahrzeuge</div>
-    <div class="category">Immobilien</div>
-    <div class="category">Jobs</div>
-    <div class="category">Haus & Garten</div>
-    <div class="category">Elektronik</div>
-    <div class="category">Freizeit</div>
-    <div class="category">Haustiere</div>
-    <div class="category">Alle Kategorien</div>
-</section>
-
-<section class="latest-ads">
-    <h2>Neueste Anzeigen</h2>
-    <div class="ads-container">
-        <div class="ad-card">
-            <strong>14.500 €</strong><br>
-            Gebrauchwagen, guter Zustand<br>
-            München – Vor 2 Stunden
-        </div>
-        <div class="ad-card">
-            <strong>1.200 €</strong><br>
-            3-Zimmer-Wohnung<br>
-            Berlin – Gestern
-        </div>
-        <div class="ad-card">
-            <strong>450 €</strong><br>
-            Dell Laptop 15 Zoll, 16GB RAM<br>
-            Köln – Vor 4 Tagen
-        </div>
+    <div class="categories">
+      <button>Fahrzeuge</button>
+      <button>Immobilien</button>
+      <button>Jobs</button>
+      <button>Haus & Garten</button>
+      <button>Elektronik</button>
+      <button>Freizeit</button>
+      <button>Haustiere</button>
+      <button>Alle Kategorien</button>
     </div>
-</section>
-
+    <section class="ads">
+      <h3>Neueste Anzeigen</h3>
+      <div class="ad-list">
+        <div class="ad">
+          <p><strong>14.500 €</strong><br/>Gebrauchtwagen, guter Zustand<br/>München – Vor 2 Stunden</p>
+        </div>
+        <div class="ad">
+          <p><strong>1.200 €</strong><br/>3-Zimmer-Wohnung in zentraler Lage<br/>Berlin – Gestern</p>
+        </div>
+        <div class="ad">
+          <p><strong>450 €</strong><br/>Dell Laptop 15 Zoll, 16GB RAM<br/>Köln – Vor 4 Tagen</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
