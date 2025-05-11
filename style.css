@@ -1,82 +1,35 @@
 
 body {
-  font-family: sans-serif;
-  background: #f9f9f9;
-  margin: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #004c99;
-  padding: 1rem 2rem;
-  color: white;
+header {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+nav {
+    margin-top: 10px;
 }
-
-.menu a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
+button {
+    margin: 5px;
+    padding: 10px 20px;
 }
-
-.post-btn {
-  background: #ffcc00;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  cursor: pointer;
+.ad-list {
+    padding: 20px;
 }
-
-.search-bar {
-  padding: 1rem 2rem;
-  background: white;
-  display: flex;
-  gap: 10px;
+.ad {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
 }
-
-.search-bar input {
-  flex: 1;
-  padding: 0.5rem;
+ul {
+    list-style-type: none;
+    padding: 20px;
 }
-
-.search-bar button {
-  background: #004c99;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-}
-
-.categories {
-  padding: 1rem 2rem;
-  background: #fff;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.categories button {
-  background: #eee;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.listings {
-  padding: 2rem;
-}
-
-.listing {
-  display: flex;
-  gap: 1rem;
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }

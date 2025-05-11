@@ -1,53 +1,35 @@
-
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Findemarkt24 - İlanlar</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findemarkt24 - Startseite</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top-bar">
-    <div class="logo">Findemarkt24</div>
-    <div class="menu">
-      <a href="#">Vitrin</a>
-      <a href="#">Kategoriler</a>
-      <a href="#">Giriş Yap</a>
-      <button class="post-btn">+ İlan Ver</button>
-    </div>
-  </header>
-
-  <div class="search-bar">
-    <input type="text" placeholder="Kelime veya ilan no ile ara" />
-    <button>Ara</button>
-  </div>
-
-  <div class="categories">
-    <button>Vasıta</button>
-    <button>Emlak</button>
-    <button>İkinci El</button>
-    <button>İş İlanları</button>
-    <button>Hizmetler</button>
-  </div>
-
-  <main class="listings">
-    <div class="listing">
-      <img src="https://via.placeholder.com/150" />
-      <div>
-        <h3>2016 Volkswagen Passat 1.6 TDI</h3>
-        <p>İstanbul, Kadıköy</p>
-        <strong>640.000 TL</strong>
-      </div>
-    </div>
-    <div class="listing">
-      <img src="https://via.placeholder.com/150" />
-      <div>
-        <h3>3+1 Kiralık Daire - Bahçelievler</h3>
-        <p>İstanbul, Bahçelievler</p>
-        <strong>13.000 TL</strong>
-      </div>
-    </div>
-  </main>
+    <header>
+        <h1>Findemarkt24</h1>
+        <nav>
+            <button onclick="location.href='index.html'">Startseite</button>
+            <button onclick="location.href='kategorien.html'">Kategorien</button>
+        </nav>
+    </header>
+    <main>
+        <input type="text" placeholder="z.B. Auto, Wohnung...">
+        <input type="text" placeholder="PLZ oder Ort">
+        <button>Suchen</button>
+        <h2>Neueste Anzeigen</h2>
+        <div class="ad-list">
+            <div class="ad">
+                <p>14.500 € - Gebrauchtwagen, guter Zustand - München</p>
+            </div>
+            <div class="ad">
+                <p>1.200 € - 3-Zimmer-Wohnung in zentraler Lage - Berlin</p>
+            </div>
+            <div class="ad">
+                <p>450 € - Dell Laptop, 15 Zoll, 16GB RAM - Köln</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
