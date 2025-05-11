@@ -1,51 +1,53 @@
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Findemarkt24 – Startseite</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Findemarkt24 - İlanlar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Findemarkt24</h1>
-    <div class="actions">
-      <a href="#">Anmelden</a>
-      <button>Anzeige aufgeben</button>
+  <header class="top-bar">
+    <div class="logo">Findemarkt24</div>
+    <div class="menu">
+      <a href="#">Vitrin</a>
+      <a href="#">Kategoriler</a>
+      <a href="#">Giriş Yap</a>
+      <button class="post-btn">+ İlan Ver</button>
     </div>
   </header>
-  <main>
-    <h2>Finde, was du suchst</h2>
-    <div class="search-bar">
-      <input type="text" placeholder="z.B. Auto, Wohnung…" />
-      <input type="text" placeholder="PLZ oder Ort" />
-      <button>Suchen</button>
-    </div>
-    <div class="categories">
-      <button>Fahrzeuge</button>
-      <button>Immobilien</button>
-      <button>Jobs</button>
-      <button>Haus & Garten</button>
-      <button>Elektronik</button>
-      <button>Freizeit</button>
-      <button>Haustiere</button>
-      <button>Alle Kategorien</button>
-    </div>
-    <section class="ads">
-      <h3>Neueste Anzeigen</h3>
-      <div class="ad-list">
-        <div class="ad">
-          <p><strong>14.500 €</strong><br/>Gebrauchtwagen, guter Zustand<br/>München – Vor 2 Stunden</p>
-        </div>
-        <div class="ad">
-          <p><strong>1.200 €</strong><br/>3-Zimmer-Wohnung in zentraler Lage<br/>Berlin – Gestern</p>
-        </div>
-        <div class="ad">
-          <p><strong>450 €</strong><br/>Dell Laptop 15 Zoll, 16GB RAM<br/>Köln – Vor 4 Tagen</p>
-        </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Kelime veya ilan no ile ara" />
+    <button>Ara</button>
+  </div>
+
+  <div class="categories">
+    <button>Vasıta</button>
+    <button>Emlak</button>
+    <button>İkinci El</button>
+    <button>İş İlanları</button>
+    <button>Hizmetler</button>
+  </div>
+
+  <main class="listings">
+    <div class="listing">
+      <img src="https://via.placeholder.com/150" />
+      <div>
+        <h3>2016 Volkswagen Passat 1.6 TDI</h3>
+        <p>İstanbul, Kadıköy</p>
+        <strong>640.000 TL</strong>
       </div>
-    </section>
+    </div>
+    <div class="listing">
+      <img src="https://via.placeholder.com/150" />
+      <div>
+        <h3>3+1 Kiralık Daire - Bahçelievler</h3>
+        <p>İstanbul, Bahçelievler</p>
+        <strong>13.000 TL</strong>
+      </div>
+    </div>
   </main>
 </body>
 </html>
