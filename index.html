@@ -1,14 +1,30 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Findemarkt24</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
+  <meta charset="UTF-8">
+  <title>Findemarkt24 - Kategorien</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; margin: 0; background: #f2f2f2; }
+    h1 { text-align: center; }
+    .kategorien { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+    .karte { background: white; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); cursor: pointer; transition: 0.2s; }
+    .karte:hover { background: #e6e6e6; }
+  </style>
 </head>
 <body>
-    <h1>Findemarkt24 Uygulaması</h1>
-    <p>Hoş geldiniz!</p>
+  <h1>Kategorien</h1>
+  <div class="kategorien">
+    <div class="karte">Fahrzeuge</div>
+    <div class="karte">Immobilien</div>
+    <div class="karte">Elektronik</div>
+    <div class="karte">Haushalt & Möbel</div>
+    <div class="karte">Mode & Accessoires</div>
+    <div class="karte">Familie, Kind & Baby</div>
+    <div class="karte">Freizeit, Hobby & Nachbarschaft</div>
+    <div class="karte">Dienstleistungen</div>
+    <div class="karte">Stellenangebote</div>
+    <div class="karte">Zu Verschenken & Tauschen</div>
+  </div>
 </body>
 </html>
