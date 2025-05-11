@@ -1,28 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Findemarkt24 - Startseite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Findemarkt24</h1>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="kategorien.html">Kategorien</a>
-        </nav>
+        <button onclick="window.location.href='login.html'">Anmelden</button>
+        <button onclick="window.location.href='post_ad.html'">Anzeige aufgeben</button>
     </header>
-    <main>
+
+    <input type="text" placeholder="z.B. Auto, Wohnung..." />
+    <input type="text" placeholder="PLZ oder Ort" />
+    <button>Suchen</button>
+
+    <section>
+        <h2>Kategorien</h2>
+        <ul>
+            <li>Fahrzeuge</li>
+            <li>Immobilien</li>
+            <li>Jobs</li>
+            <li>Haus & Garten</li>
+            <li>Elektronik</li>
+            <li>Freizeit</li>
+            <li>Haustiere</li>
+        </ul>
+    </section>
+
+    <section>
         <h2>Neueste Anzeigen</h2>
-        <div class="ad-list">
-            <a href="detail.html" class="ad">
-                <p>3-Zimmer-Wohnung in Berlin - 1.200 €</p>
-            </a>
-            <a href="detail.html" class="ad">
-                <p>VW Passat 2016 TDI - 14.500 €</p>
-            </a>
-        </div>
-    </main>
+        <div>14.500 € – Gebrauchtwagen, guter Zustand (München)</div>
+        <div>1.200 € – 3-Zimmer-Wohnung (Berlin)</div>
+        <div>450 € – Dell Laptop, 15 Zoll, 16GB RAM (Köln)</div>
+    </section>
 </body>
 </html>
