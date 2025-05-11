@@ -1,0 +1,10 @@
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { display: flex; justify-content: space-between; padding: 1rem; background: #f0f0f0; }
+.actions button { background: #ffc107; border: none; padding: 0.5rem 1rem; }
+main { padding: 2rem; }
+.categories, .search-bar, .ad-list { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+button { padding: 0.5rem 1rem; background: #e0e0e0; border: none; cursor: pointer; }
+.login-container { padding: 2rem; max-width: 400px; margin: auto; }
+.login-container form { display: flex; flex-direction: column; gap: 1rem; }
+.login-container .google { background: #4285f4; color: white; }
